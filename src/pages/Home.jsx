@@ -3,6 +3,7 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 import { AiOutlinePlusSquare } from "react-icons/ai";
 import { AiFillEye } from "react-icons/ai";
+import Navbar from "./Navbar";
 
 export default function Home() {
   const [menus, setMenus] = useState([]);
@@ -24,6 +25,7 @@ export default function Home() {
 
   return (
     <>
+      <Navbar />
       <div className="max-w-4xl p-8 mx-auto my-10 rounded-md shadow-lg bg-stone-50">
         <div className="flex items-center justify-between">
           <h1 className="text-xl font-semibold">Menu</h1>
